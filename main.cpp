@@ -39,11 +39,11 @@ int main(int argc, char **argv)
         temp2 = printBoard(board);
         if(turnx)
         {
-            board.at((temp2-(temp2%3))/3).at(temp2%3) = 1;
+            board.at(temp2/3).at(temp2%3) = 1;
         }
         else
         {
-            board.at((temp2-(temp2%3))/3).at(temp2%3) = 2;
+            board.at(temp2/3).at(temp2%3) = 2;
         }
         turnx = !turnx;
     }
