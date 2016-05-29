@@ -104,7 +104,7 @@ int printBoard(vector< vector<int> > board)
         }
         else if(ch == 10 && board.at(x).at(y) == 0)
         {
-            return((y*3)+x);
+            return(((y/2)*3)+(x/2));
         }
         clear();
     }
